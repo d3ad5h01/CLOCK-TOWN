@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Timer</title>
+
+<!-- Bootstrap -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="time_css.css" rel="stylesheet">
+
+<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div id="header">
+
+      <p class= "top">
+        Timer
+      </p>
+
+  </div>
+
+<div id ="ipt">
+
+
+  <input type="number" placeholder="  Input the time in days" id="myInput1" class="inp">
+  <input type="number" placeholder="  Input the time in hours" id="myInput2"class="inp">
+  <input type="number" placeholder="  Input the time in minutes" id="myInput3"class="inp">
+  <input type="number" placeholder="  Input the time in seconds" id="myInput4"class="inp"><br /><br />
+  <button type="button" id = "btn" onclick="getInputValue();">Set Timer</button>
+</div>
+
+<div id="timer1">
+
+
+
+</div>
+
+
+
+
+<div id = "timer1">
+      <div class = "time" id="out1">
+        <p id="days"></p>
+      </div>
+
+      <p class=" semi" id="semi1" ></p>
+
+      <div class = "time" id="out2">
+      <p id="hours"></p>
+      </div>
+
+      <p class=" semi" id="semi2"></p>
+
+      <div class = "time" id="out3">
+      <p id="minutes"></p>
+      </div>
+
+      <p class=" semi" id="semi3"></p>
+
+      <div class = "time" id="out4">
+      <p id="sec"></p>
+      </div>
+
+      <h2 id="end"></h2>
+
+
+</div>
+
+
+    <script>
+    function getInputValue()
+    {
+
+            var set_time =(1000*60*60*24)*(document.getElementById("myInput1").value)+(1000*60*60)* (document.getElementById("myInput2").value)+(1000*60)* (document.getElementById("myInput3").value)+(1000)* (document.getElementById("myInput4").value);
+            document.getElementById("btn").style.display = "none";
+            document.getElementById("myInput1").style.display = "none";
+            document.getElementById("myInput2").style.display = "none";
+            document.getElementById("myInput3").style.display = "none";
+            document.getElementById("myInput4").style.display = "none";
+
+
+
+
+
+    var fct = setInterval(function(){
+      if(set_time<=0)
+      {
+        document.getElementById("days").style.display = "none";
+        document.getElementById("hours").style.display = "none";
+        document.getElementById("minutes").style.display = "none";
+        document.getElementById("sec").style.display = "none";
+        document.getElementById("end").innerHTML =  "ending" ;
+        clearInterval(fct);
+      }
+        var days =Math.floor(set_time/(1000*60*60*24));
+        var hour =Math.floor((Math.floor( set_time%(1000*60*60*24) ) ) /(1000*60*60));
+        var minute = Math.floor(Math.floor((Math.floor(set_time%(1000*60*60*24)))%(1000*60*60))/(1000*60));
+        var second =Math.floor((Math.floor(Math.floor((Math.floor(set_time%(1000*60*60*24)))%(1000*60*60))%(1000*60)))/1000);
+
+
+        document.getElementById("days").innerHTML = ( format(days));
+        document.getElementById("hours").innerHTML = ( format(hour));
+        document.getElementById("minutes").innerHTML = (format(minute));
+        document.getElementById("sec").innerHTML = (format(second));
+        document.getElementById("semi1").innerHTML = " : ";
+        document.getElementById("semi2").innerHTML = " : ";
+        document.getElementById("semi3").innerHTML = " : ";
+
+        set_time = set_time - 1000;
+
+    },1000)
+
+    function format(number)
+    {
+        if(number<10)
+        {
+            return '0'+number;
+        }
+        else
+        {
+            return number;
+        }
+    }
+}
+
+    </script>
+</body>
+</html>

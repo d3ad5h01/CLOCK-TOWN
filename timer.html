@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  display: inline;
+  font-size: 40px;
+  margin-top: 0px;
+}
+</style>
+</head>
+<body>
+
+  <input type="number" placeholder="  Input the time in days" id="myInput1" class="inp">
+  <input type="number" placeholder="  Input the time in hours" id="myInput2"class="inp">
+  <input type="number" placeholder="  Input the time in minutes" id="myInput3"class="inp">
+  <input type="number" placeholder="  Input the time in seconds" id="myInput4"class="inp"><br /><br />
+  <button type="button" id = "btn" onclick="getInputValue();">Set Timer</button>
+
+    <p id="days"></p>
+    <p id="hours"></p>
+    <p id="mins"></p>
+    <p id="secs"></p>
+    <h2 id="end"></h2>
+    <script>
+
+
+    function getInputValue(){
+            // Selecting the input element and get its value
+
+            var set_time =(1000*60*60*24)*(document.getElementById("myInput1").value)+(1000*60*60)* (document.getElementById("myInput2").value)+(1000*60)* (document.getElementById("myInput3").value)+(1000)* (document.getElementById("myInput4").value);
+            document.getElementById("btn").style.display = "none";
+            document.getElementById("myInput1").style.display = "none";
+            document.getElementById("myInput2").style.display = "none";
+            document.getElementById("myInput3").style.display = "none";
+            document.getElementById("myInput4").style.display = "none";
+
+    // Run myfunc every second
+    var myfunc = setInterval(function() {
+
+    var now = new Date().getTime();
+    var timeleft = countDownDate - now;
+
+    // Calculating the days, hours, minutes and seconds left
+    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+    // Result is output to the specific element
+    document.getElementById("days").innerHTML = days + "days "
+    document.getElementById("hours").innerHTML = hours + "hours "
+    document.getElementById("mins").innerHTML = minutes + "minutes "
+    document.getElementById("secs").innerHTML = seconds + "seconds "
+
+    // Display the message when countdown is over
+    if (timeleft < 0) {
+        clearInterval(myfunc);
+        document.getElementById("days").innerHTML = ""
+        document.getElementById("hours").innerHTML = ""
+        document.getElementById("mins").innerHTML = ""
+        document.getElementById("secs").innerHTML = ""
+        document.getElementById("end").innerHTML = "TIME UP!!";
+    }
+  }, 1000)};
+    </script>
+</body>
+</html>

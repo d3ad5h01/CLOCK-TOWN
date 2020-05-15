@@ -1,0 +1,75 @@
+body {
+    background: url(images/5.jpg) center center fixed;
+    background-size: cover;
+    color: #black;
+}
+
+p{
+  display: inline;
+}
+
+#header{
+    text-align: center;
+    height: 200px;
+    width : 200px;
+    display: block;
+    font-size: 100px;
+    margin: auto;
+
+
+    font-family: 'Pacifico', cursive;
+
+    align-content: center;
+    }
+
+    #ipt{
+      text-align: center;
+
+      display: block;
+      font-size: 25px;
+      margin: auto;
+
+
+      font-family: 'Pacifico', cursive;
+
+      align-content: center;
+    }
+
+    .inp{
+      border-radius: 30px;
+
+    }
+
+    #btn{
+      border-radius: 30px;
+      background-color: #808080
+    }
+
+
+
+
+    .time{
+      display: inline;
+       width:auto;
+       height: auto;
+       background: white;
+       font-size: 90px;
+       border-radius: 20px;
+
+       align-content: center;
+
+
+    }
+
+    .semi{
+      font-size: 50px;
+
+    }
+
+
+    #timer1{
+      align-content: center;
+      margin: auto;
+      text-align: center;
+
+    }
