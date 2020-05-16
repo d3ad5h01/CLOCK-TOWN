@@ -26,55 +26,56 @@
   <body>
 
 
-    <nav role="navigation" class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img src="images\10.png" class="logo"></a>
-                <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse" id="navbarCollapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Clock</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+    <div id="main-cont">
+
+        <div id="hello">
+          <p class="helo">Hello,</p>
         </div>
-    </nav>
+        <div id="text">
+          <p class="helo1">Lost time is never<br /> found again.<br /> Preserve every<br /> moment with our<br /> tools.</p>
+        </div>
+        <div id="butns">
+            <div id="row1">
 
-      <!--Title-->
-
-          <div id="header">
-            <p class="helo">Hello,</p>
-<br/>
-
-
-            <p class="helo1">Lost time is never<br /> found again.<br /> Preserve every<br /> moment with our<br /> tools.</p>
-            <p class="copy_">@tez</p>
+              <input type=button id="stopwatch" class="btn1" onClick=window.open("","demo","width=550,height=300,left=150,top=200,toolbar=0,status=0,"); value="Stopwatch">
+              <input type=button id="timer"class="btn1" onClick=window.open("time.html","demo","width=550,height=300,left=150,top=200,toolbar=0,status=0,"); value="Timer">
 
 
+            </div>
+            <div id="row2">
 
+              <input type=button id="alarm"class="btn1" onClick=window.open("time.html","demo","width=550,height=300,left=150,top=200,toolbar=0,status=0,"); value="Alarm">
+              <input type=button id="clocks"class="btn1" onClick=window.open("time.html","demo","width=550,height=300,left=150,top=200,toolbar=0,status=0,"); value="Clocks">
+
+
+            </div>
+            <div id="row3">
+
+
+              <input type=button id="watches"class="btn1" onClick=window.open("time.html","demo","width=550,height=300,left=150,top=200,toolbar=0,status=0,"); value="Watches">
+              <input type=button id="p_watches"class="btn1" onClick=window.open("time.html","demo","width=550,height=300,left=150,top=200,toolbar=0,status=0,"); value="Pocket Watches">
+
+            </div>
+
+            <div id="row4">
+
+
+                <input type=button id="intern_time"class="btn1" onClick=window.open("time.html","demo","width=550,height=300,left=150,top=200,toolbar=0,status=0,"); value="International Time">
+            </div>
 
 
           </div>
-          <div id="ok1" class="here">
+        <div id="copy">
+          <p class="copy_">@tez</p>
+        </div>
 
-            <input type=button id="stopwatch" class="btn1" onClick=window.open("","demo","width=550,height=300,left=150,top=200,toolbar=0,status=0,"); value="Stopwatch">
-          </div>
-
-          <div id="ok2" class="here">
-            <input type=button id="timer"class="btn1" onClick=window.open("time.html","demo","width=550,height=300,left=150,top=200,toolbar=0,status=0,"); value="Timer">
-          </div>
+    </div>
 
 
 
-  </div>
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

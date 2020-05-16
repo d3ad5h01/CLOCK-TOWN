@@ -3,144 +3,154 @@ body {
     background: url(images/6.jpg) center center fixed;
     background-size: cover;
     color: #fff;
+    background-repeat: no-repeat;
 }
 
 
 
-.textc{
+#main-cont{
+font-family: 'Pacifico', cursive;
+margin-left: 20px;
+}
+
+#hello
+{
   display: block;
-}
-/*title*/
-
-
-#header{
-    text-align: left;
-
-    float: left;
-    margin-left: 30px;
-    font-family: 'Pacifico', cursive;
-    }
-
-    p.helo{
-      display: block;
-      font-size: 112px;
-
-      /*background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%)
-    */}
-    p.helo1{
-      display: inline;
-      margin-top: px;
-      font-size: 50px;
-      background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%)
-      /*color: black; */
-
-    }
-
-    #ok1{
-
-      display: inline;
-      margin-top: 150px;
-      margin-left: 1100px;
-      height: auto;
-      width: auto;
-      font-family: 'Pacifico', cursive;
-      display: block;
-      text-align: center;
-      line-height: 180px;
-    }
-
-    #ok2{
-      display: inline;
-      margin-top: 40px;
-      margin-left: 1100px;
-      height: auto;
-      width: auto;
-      font-family: 'Pacifico', cursive;
-      display: block;
-      text-align: center;
-      line-height: 180px;
-    }
-
-
-
-
-.logo{
-    height: 30px;
+  font-size: 100px;
 }
 
-/*Style navigation bar*/
-.navbar-inverse{
-    background: rgba(0,0,0,0.5);
+#text{
+display: inline-block;
+font-size: 70px;
+background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+border-radius: 30px;
 }
-
-.nav li{
-    color: #fff;
-    font-size: 17px;
-    margin-right: 35px;
-    padding: 10px 0;
-}
-
-.nav li:hover{
-    border-bottom: 1px solid #00FFB8;
-    padding-bottom: 9px;
-    cursor: pointer;
-}
-
-/*Style jumbotron*/
-.jumbotron{
-    background-color: transparent;
-    color: #fff;
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-    letter-spacing: 2.5px;
-}
-
-/*limit the width of the icons section*/
-.container{
-    max-width: 1000px;
-}
-/*Style icons section using bootstrap grid system*/
-.bodyimage{
-    height: 100px;
-}
-
-.col-md-4{
-    text-align: center;
-    color: #fff;
-}
-
-.icons p{
-    font-size: 15px;
-}
-/*Style contact button*/
-.contact{
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 100px;
+p.helo1
+{
+  padding: 20px;
 }
 
 
-/*use media queries to change icons size in small devices*/
-@media (max-width: 768px){
-    .bodyimage{
-        height: 70px;
-    }
-}
+#butns
+{
+  display: inline-block;
+  float: right;
 
-
-#wch1{
-  width: 20px;
-  height: 20px;
 
 }
 
-p.copy_{
-  font-family: 'Pacifico', cursive;
-  font-size: 50px;
-  font-style: italic;
-  margin-top: 200px;
-  color: white;
+#row1{
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#stopwatch
+{
+      display: inline-block;
+      border-radius: 30px;
+      height: 200px;
+      width: 200px;
+      color: black;
+      font-size: 30px;
+      margin-right: 100px;
+
+}
+
+#timer
+{
+      display: inline-block;
+      border-radius: 30px;
+      height: 200px;
+      width: 200px;
+      color: black;
+      font-size: 30px;
+      margin-right: 100px;
+
+}
+
+
+#row2{
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#alarm
+{
+      display: inline-block;
+      border-radius: 30px;
+      height: 200px;
+      width: 200px;
+      color: black;
+      font-size: 30px;
+      margin-right: 100px;
+
+}
+
+#clocks
+{
+      display: inline-block;
+      border-radius: 30px;
+      height: 200px;
+      width: 200px;
+      color: black;
+      font-size: 30px;
+      margin-right: 100px;
+
+}
+
+
+#row3{
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#watches
+{
+      display: inline-block;
+      border-radius: 30px;
+      height: 200px;
+      width: 200px;
+      color: black;
+      font-size: 30px;
+      margin-right: 100px;
+
+}
+
+#p_watches
+{
+      display: inline-block;
+      border-radius: 30px;
+      height: 200px;
+      width: 200px;
+      color: black;
+      font-size: 26px;
+      margin-right: 100px;
+
+
+}
+
+#row4{
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+
+
+
+#intern_time
+{
+      display: inline-block;
+      border-radius: 30px;
+      height: 200px;
+      width: 500px;
+      color: black;
+      font-size: 30px;
+      margin-right: 100px;
+
 }
 
 
@@ -151,27 +161,99 @@ p.copy_{
 
 }
 
-#stopwatch{
-  border-radius: 30px;
-  height: 200px;
-  width: 200px;
-  color: black;
-  font-size: 30px;
-}
-
-#timer{
-  border-radius: 30px;
-  height: 200px;
-  width: 200px;
-  color: black;
-  font-size: 30px;
-
-}
-
 
 .btn1:hover{
     background-color: rgba(135, 132, 132, 0.5);
-
     color: #fff;
     border: none;
+}
+
+p.copy_{
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  font-style: italic;
+  color: white;
+}
+
+#copy{
+  display: block;
+}
+
+
+
+/*use media queries to change icons size in small devices*/
+@media only screen and (max-width: 1250px){
+    body{
+      background: #808080;
+      background-image: linear-gradient(to right, #80B7E8 0%, #13426C 100%);
+}
+#main-cont{
+
+}
+
+
+    #text{
+      display: block;
+      color: black;
+      background-image: linear-gradient(to right, #808080 0%, #ffffff 100%);
+
+    }
+
+    #butns{
+      display: block;
+    }
+
+    .btn1{
+      display: block;
+      float: left;
+      margin-left:50px;
+      margin-top: 40px;
+    }
+
+    #stopwatch
+    {
+      width: 500px;
+    }
+
+    #timer
+    {
+      width: 500px;
+    }
+
+    #alarm
+    {
+          width: 500px;
+    }
+
+    #clocks
+    {
+              width: 500px;
+    }
+
+
+
+    #watches
+    {
+        width: 500px;
+    }
+
+    #p_watches
+    {
+          width: 500px;
+    }
+
+
+
+
+
+    #intern_time
+    {
+
+          width: 500px;
+
+    }
+
+
+
+
 }
