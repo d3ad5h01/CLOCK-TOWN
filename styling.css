@@ -221,7 +221,8 @@ p.copy_{
     #butns
     {
       display:block;
-      float: right;
+      
+      margin-left: 40px;
 
 
     }
@@ -337,7 +338,7 @@ p.copy_{
       width: 300px;
       color: black;
       font-size: 20px;
-      margin-left: 40px;
+     
 
 
     }
