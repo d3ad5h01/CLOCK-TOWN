@@ -173,10 +173,12 @@ p.copy_{
   font-size: 50px;
   font-style: italic;
   color: white;
+  margin-top: 30px;
 }
 
 #copy{
   display: block;
+  padding: 50px;
 }
 
 
@@ -188,69 +190,161 @@ p.copy_{
       background-image: linear-gradient(to right, #80B7E8 0%, #13426C 100%);
 }
 #main-cont{
-
+  margin:20px;
 }
-
-
-    #text{
-      display: block;
-      color: black;
-      background-image: linear-gradient(to right, #808080 0%, #ffffff 100%);
-
-    }
-
-    #butns{
-      display: block;
-    }
-
     .btn1{
       display: block;
       float: left;
-      margin-left:50px;
+
       margin-top: 40px;
+    }
+    #hello
+    {
+      display: block;
+      font-size: 40px;
+    }
+
+    #text{
+    display: block;
+    font-size: 30px;
+
+    color: black;
+    background-image: linear-gradient(to right, #808080 0%, #ffffff 100%);
+    border-radius: 30px;
+    }
+    p.helo1
+    {
+      padding: 20px;
+    }
+
+
+    #butns
+    {
+      display:block;
+      float: right;
+
+
+    }
+
+    #row1{
+      display: block;
+      margin-bottom: 30px;
+      margin-top: 30px;
     }
 
     #stopwatch
     {
-      width: 500px;
+
+          display: block;
+          border-radius: 30px;
+          height: 50px;
+          width: 300px;
+          color: black;
+          font-size: 20px;
+
+
     }
 
     #timer
     {
-      width: 500px;
+      display: block;
+      border-radius: 30px;
+      height: 50px;
+      width: 300px;
+      color: black;
+      font-size: 20px;
+
+
+    }
+
+
+    #row2{
+      display: block;
+      margin-bottom: 30px;
+      margin-top: 30px;
     }
 
     #alarm
     {
-          width: 500px;
+      display: block;
+      border-radius: 30px;
+      height: 50px;
+      width: 300px;
+      color: black;
+      font-size: 20px;
+
+
     }
 
     #clocks
     {
-              width: 500px;
+      display: block;
+      border-radius: 30px;
+      height: 50px;
+      width: 300px;
+      color: black;
+      font-size: 20px;
+
+
     }
 
 
+    #row3{
+      display: block;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
 
     #watches
     {
-        width: 500px;
+      display: block;
+      border-radius: 30px;
+      height: 50px;
+      width: 300px;
+      color: black;
+      font-size: 20px;
+
+
     }
 
     #p_watches
     {
-          width: 500px;
+      display: block;
+      border-radius: 30px;
+      height: 50px;
+      width: 300px;
+      color: black;
+      font-size: 20px;
+
+
+
     }
 
+    #row4{
+      display: block;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
 
 
 
 
     #intern_time
     {
+      display: block;
+      border-radius: 30px;
+      height: 50px;
+      width: 300px;
+      color: black;
+      font-size: 20px;
 
-          width: 500px;
 
+    }
+
+    p.copy_{
+
+      font-size: 10px;
+      color: white;
     }
 
 
